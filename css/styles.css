@@ -1,0 +1,30 @@
+/* styles pour l'intro au css  */
+body {
+    background-color: rgb(105, 151, 192);
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.stabilo {
+    background-color: aquamarine;
+}
+.bouton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+code {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+}
