@@ -1,73 +1,127 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="fr">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JavaScript -II/01 introduction</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>JavaScript -II/01 introduction</title>
+  <!-- js en externe -->
+  <script src="introduction.js" async></script>
+</head>
+
+<body class="bg-secondary bg-gradient">
 
 
-   <div class="container-fluid bg-info p-5 text-center">
-        <h1>JavaScript -II/01 introduction</h1>
-        <p>Constantes & variables</p>
-       
-   </div>
-   <!-- =================================== -->
-   <!-- container principal -->
-   <!-- =================================== -->
-   <div class="container bg-warning">
-    <div class="row">
-        <div class="col-sm-4">
-            <h2>1- Qu'est qu'une variable</h2>
-            <p>Une variable est un conteneur servant à stocker des informations de manière temporaire, du texte (une chaîne de caractère) ou un nombre. La variable varie ! Elle stocke différentes valeurs au fil du temps.</p>
-            <p>Une variable et la valeur sont deux choses différentes</p>
-        </div>
-        <!-- fin col -->
-        <div class="col-sm-4">
-          <h2>2- Régles de déclaration</h2>
-          <p>On dit (comme en php) que l'on "déclare" une variable. On déclare une variable avec les mots-clefs : </p>
-          <ul>
-              <li> <code>let</code> </li>
-              <li> <code>var</code></li>
-          </ul>
-          <hr>
-          <ul>
-            <li>Le nom d'une variable doit obligatoirement commencer par une lettre ou un underscore _ </li>
-            <li>Le nom d'une variable ne doit contenir que des lettres, des chiffres et des underscore  </li>
-            <li>il n'y a pas d'espace</li>
-            <li>cf. introduction.js et <a href="../00-entrainement/00-entrainement.html" target="_blank">Entrainement</a></li>
+  <div class="container bg-light  p-5 text-center">
+    <h1>JavaScript -II/01 introduction</h1>
+    <p>Constantes & variables</p>
+
+  </div>
+  <!-- =================================== -->
+  <!-- container principal -->
+  <!-- =================================== -->
+  <div class="container">
+    <div class="row  bg-light   mt-4">
+      <div class="col-sm-4">
+        <h2>1- Qu'est qu'une variable</h2>
+        <p>Une variable est un conteneur servant à stocker des informations de manière temporaire, du texte (une chaîne
+          de caractère) ou un nombre. La variable varie ! Elle stocke différentes valeurs au fil du temps.</p>
+        <p>Une variable et la valeur sont deux choses différentes</p>
+      </div>
+      <!-- fin col -->
+      <div class="col-sm-4">
+        <h2>2- Régles de déclaration</h2>
+        <p>On dit (comme en php) que l'on "déclare" une variable. On déclare une variable avec les mots-clefs : </p>
+        <ul>
+          <li> <code>let</code> </li>
+          <li> <code>var</code></li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Le nom d'une variable doit obligatoirement commencer par une lettre ou un underscore _ </li>
+          <li>Le nom d'une variable ne doit contenir que des lettres, des chiffres et des underscore </li>
+          <li>il n'y a pas d'espace</li>
+          <li>cf. introduction.js et <a href="../00-entrainement/00-entrainement.html" target="_blank">Entrainement</a>
+          </li>
         </ul>
 
-        </div>
-           <!-- fin col -->
-        <div class="col-sm-4">
-            <h2>3- initialiser une variable- </h2>
-            <p>Quand on assigne une valeur à une variable vide on dit que l'on stocke une valeur ou qu'on initialise une variable</p>
+      </div>
+      <!-- fin col -->
+      <div class="col-sm-4">
+        <h2>3- initialiser une variable- </h2>
+        <p>Quand on assigne une valeur à une variable vide on dit que l'on stocke une valeur ou qu'on initialise une
+          variable</p>
 
-        </div>
-           <!-- fin col -->
-
+      </div>
+      <!-- fin col -->
     </div>
+    <section class="row bg-light mt-4">
+      <h2>4 - Différance entre <code>var</code>et <code>let</code></h2>
+      <hr>
+      <div class="col-sm-3 bg-info">
+        <p><code>let</code> el plus récent et plus contraignant que <code>var</code></p>
+      </div>
+      <div class="col-sm-3 bg-warning">
+        <h3>A - la remontée ou hoisting des variables</h3>
+        <p> avec <code>var</code> on n'est pas obligé de déclare la variable avant de la manipuler ou l'affecter</p>
+      </div>
+      <div class="col-sm-3 bg-success">
+        <h3>B - la redéclaration des variable</h3>
+        <p> avec <code>var</code> on avait le droit de déclarer plusieurs fois une même variable en utlisant à chaque
+          fois var (ce qui avait pour effet de modifier la valeur stockée ). On peut pas me faire avec <code>let</code>
+        </p>
+      </div>
+      <div class="col-sm-3 bg-primary">
+        <h3>C - la "portée" d'une variable </h3>
+        <p> la "portée" d'une variable désigne l'endroit où cette variable va pouvoir être utlisée dans un script.</p>
+        <p>Nous reparlerons donc de cette portée des variable lorsque nous aborderons les fonctions en JavaScript</p>
+      </div>
+      <div class="col-sm-12">
+        <h3>D- Conclusion : <code>let</code> ou <code>var</code> ?</h3>
+        <p>La syntaxe de déclaration des variables avec let correspond à la nouvelle syntaxe. La syntaxe avec
+          <code>var</code> est l’ancienne syntaxe qui est vouée à disparaitre.
+        </p>
+        <p class="stabilo">Vous devriez donc aujourd’hui toujours utiliser le mot clef <code>let</code> pour déclarer
+          vos variables, sachant que c'est un peu contraignant.</p>
+      </div>
+      <!-- fin des clos  -->
+    </section>
+    <section class="row bg-light mt-4">
+      <div class="col-sm-6">
+        <h2>5- Quelle utilité pour les variables ?</h2>
+        <p>Il sera pratique de stocker différents types de données ou d'informations dans une variable.</p>
+      </div>
+      <!-- fin col  -->
+      <div class="col-sm-6">
+        <h2>6- Comment afficher le contenu d'une variable ? </h2>
+        <p>cf. <a href="02-02-afficher.html">une page avec des exemples</a> </p>
+      </div>
+      <!-- fin col  -->
+    </section>
+    <!-- fin de rangée  -->
 
-   </div>
-   <!-- =================================== -->
-   <!-- fin de container -->
-   <!-- =================================== -->
+  </div>
+  <!-- =================================== -->
+  <!-- fin de container -->
+  <!-- =================================== -->
 
 
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
 
-  </body>
+</body>
+
 </html>
