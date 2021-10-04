@@ -35,3 +35,6 @@ code {
     color: red;
     padding: 5px;
 }
+h2 {
+    border-bottom: 1px solid black;
+}
