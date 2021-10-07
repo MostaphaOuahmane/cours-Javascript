@@ -158,15 +158,46 @@
 
     // document.write('<h3 style=" margin:auto ;background:orange;width:60%;color: #fff;text-algin;center;">5-EXO-2 </h3> ');
 
-let votreCHiffre =prompt('Quel votre chiffre ?');
-// console.log(votreCHiffre);
-// console.log(votreCHiffre*votreCHiffre) ; // votre chiffre au carré
-// console.log(votreCHiffre**3);
+    let votreCHiffre = prompt('Quel votre chiffre ?');
+    // console.log(votreCHiffre);
+    // console.log(votreCHiffre*votreCHiffre) ; // votre chiffre au carré
+    // console.log(votreCHiffre**3);
 
-let auCarre=votreCHiffre*votreCHiffre;
-let auCube=votreCHiffre*votreCHiffre*votreCHiffre;
- alert ('vous avez saisi le nombre :'+votreCHiffre+' ce chiffre  au carré est égal à  '+auCarre+' ce chiffre au cube est égal à '+auCube);
- document.write ('<p>vous avez saisi le nombre :'+votreCHiffre+'<br> ce chiffre  au carré est égal à  '+auCarre+' <br> ce chiffre au cube est égal à '+auCube+'.</p> ');
+    let auCarre = votreCHiffre * votreCHiffre;
+    let auCube = votreCHiffre * votreCHiffre * votreCHiffre;
+    alert('vous avez saisi le nombre :' + votreCHiffre + ' ce chiffre  au carré est égal à  ' + auCarre + ' ce chiffre au cube est égal à ' + auCube);
+    document.write('<p>vous avez saisi le nombre :' + votreCHiffre + '<br> ce chiffre  au carré est égal à  ' + auCarre + ' <br> ce chiffre au cube est égal à ' + auCube + '.</p> ');
+
+    document.write('<h2 style="margin:auto ; background:orange;width:80%;color: #fff;text-algin;center;">6- Conndition</h2> ');
+
+
+    let a = 2, b = 5, c = 2;
+    console.log(a, b, c);
+
+    if (a > b) {
+      document.write('<p> A est supérieur  B </p>');
+    }
+    else {
+      document.write('<p> A  n\'est  pas supérieur B </p>');
+    }
+
+
+    if (a == b) {
+      document.write('<p> a =  ' + a + '  est égal   b = ' + b + '</p>');
+    }
+    else {
+      document.write('<p> a =   ' + a + '  n\'est  pas égal   b = ' + b + ' </p>');
+    }
+
+
+    if (a === b) {
+      document.write('<p> a =  ' + a + '  est égal   b  en type= ' + b + '</p>');
+    }
+    else {
+      document.write('<p> a =   ' + a + '  n\'est  pas égal   b en type = ' + b + ' </p>');
+    }
+
+
 
 
 
