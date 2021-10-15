@@ -307,10 +307,10 @@
 
 
             //  Récuperer dans une variable la réponse a la question suivante ; "parmi ces couleurs , le céladon, le azur, le rouge cramoisi, le parme ; quelle est votre couleur préférée ?"
-            let choixCouleur = prompt('Parmi ces couleurs, le vert, le bleu, le rouge, le parme ; quelle est votre couleur préférée?');
+        //     let choixCouleur = prompt('Parmi ces couleurs, le vert, le bleu, le rouge, le parme ; quelle est votre couleur préférée?');
          
-         console.log(choixCouleur);
-         document.write('<p>Votre couleur préférée est ' + choixCouleur +' .</p>');
+        //  console.log(choixCouleur);
+        //  document.write('<p>Votre couleur préférée est ' + choixCouleur +' .</p>');
 
 
 // if (choixCouleur == 'vert'){
@@ -331,29 +331,192 @@
 // } else{
 //       document.write( 'ah ! tien vous n\'aime pas les couleurs ni le vert ni le azur ni le bleu ni le parme');
 // }
-switch (choixCouleur) {
+// switch (choixCouleur) {
       
-    case ' le vert':
-    document.write('vous préfére   c\'est le vert  ');
-        break;
-    case 'le azur':
-    document.write('vous préfére   c\'est le azur ');
-        break;
-    case 'le bleu':
-    document.write('vous préfére   c\'est le bleu  ');
-        break;
-        case 'le parme':
-        document.write('vous préfére   c\'est  le parme  ');
-        break;
+//     case ' le vert':
+//     document.write('vous préfére   c\'est le vert  ');
+//         break;
+//     case 'le azur':
+//     document.write('vous préfére   c\'est le azur ');
+//         break;
+//     case 'le bleu':
+//     document.write('vous préfére   c\'est le bleu  ');
+//         break;
+//         case 'le parme':
+//         document.write('vous préfére   c\'est  le parme  ');
+//         break;
    
-    default:
-    document.write( 'ah ! tien vous n\'aime pas les couleurs ni le vert ni le azur ni le bleu ni le parme');
-    break;
-}
+//     default:
+//     document.write( 'ah ! tien vous n\'aime pas les couleurs ni le vert ni le azur ni le bleu ni le parme');
+//     break;
+// }
+ 
+// // fonction
+// document.write('<h2 style="margin:auto; background:ornge;width:80%;color:#fff;text-align: center;">8-FONCTIONS PREDEFINIE ET UTILISATEUR</h2>');
+
+// var phrase1='Vive les frites ! ';
+// var phrase2=' SILENCE !!! SVP';
+// console.log(phrase1 , phrase2);
+
+// // toupperCase() et toLowerCase
+// console.log(phrase1.toUpperCase);
+// document.write('<p> cette phrase en majuscule  :'+phrase1.toUpperCase()+'</p>');
+// document.write('<p> cette phrase en minuscule  :'+phrase2.toLowerCase()+'</p>');
+
+// // une fonctions prédéfinie tres  importante lenght
 
 
+// //  cette fonction compte les caracrtées d'une string les espaces et les letrres etc
+// var phrase3 ='the name is bond ; james bond';
+//  console.log(phrase3.length);
+//  document.write('<p> Test ; dans la phrase suivante '+phrase3+ 'il ya '+ phrase3.length+'</p>');
+
+//  function bauTemps () {
+//      return document.write('<p> il fait beau</p>');
+
+//  }
+// //  appelle la function
+//  bauTemps();
 
 
+//  function coucou () {
+//      return alert ('coucou les amis !');
+//  }
+
+//  coucou ();
+
+//  function direBonjour (prenom) {
+//      var message = document.write ('<p> bonjour '  +prenom+ '.comment vas-tu ?  '+ '</p>');
+//      return message;
+//  } 
+// direBonjour ('toto');
+
+// function uneligne () {
+//     return document.write ('<hr>');
+// }
+//  uneligne();
+//  // promte et function 
+//  let prenom2 = prompt('quel est votre pénom');
+//  console.log(prenom2);
+
+//  function direBonjour2 (prenom2) {
+//       var message2 = document.write('<p> bonjour '+prenom2+'.bienvenue sur note site .</p> ');
+//      return message2;
+//  }
+//  direBonjour2(prenom2);
+
+//   EXO
+
+// let saison = prompt('Quelle est la saison?  ');
+// let temperature = prompt('Quelle est tempérture extérieure?  ');
+// console.log(saison,temperature );
+
+// function questionmeteo (saison,temperature ) {
+//     var message3 = document.write('<p> la saison:   '+saison+' et il fait  '+temperature + ' °.</p> ');
+//      return message3;
+//     console.log(questionmeteo);
+// }
+// questionmeteo(saison,temperature );
+
+
+// le printemps , l'hiver , l'été ,l'automne
+
+// nous sommes au printemps 
+// nous sommes en
+
+// if ( saison == 'printemps') { 
+//     document.write('<p>nous sommes au '+saison+ '  .</p> ');
+// }else{
+//     document.write('nous somme en  '+saison);
+// }
+
+
+// if avec function
+
+// function metoeIfSaison (saison ,temperature ) {
+//     if ( saison == 'printemps') { 
+//     var message4 = document.write('<p>nous sommes au '+saison+ ' et fait  le '+ temperature+   ' °   .</p> ');
+// }else{
+//    var message4= document.write('nous somme en  '+saison + ' et fait  le ' + temperature +'°'   );
+// }
+// return message4; 
+
+// // }
+// metoeIfSaison(saison ,temperature);
+
+
+// function meteoIfArticl (saison ,temperature ){
+//     var article ;
+//     if ( saison == 'printemps') { 
+//         article='au';
+    
+//     }else {
+//          article = 'en';
+//     }
+//     return document.write('<p> meteoIfArticl////nous sommes au '+ article+ ' '+saison+ ' et fait  le '+ temperature+   ' °    </p>');   
+// }
+// meteoIfArticl(saison ,temperature );
+
+
+//    if ( saison == 'printemps') {
+//     document.write ('nous sommes au '+saison);
+//    }else if ( saison == 'été'||saison=='automne'||saison=='hiver') {
+//   document.write ('nous sommes au' +'  '+saison);
+ 
+//    } else {
+//    document.write('cette saison'+ '   '+ +saison+  ' n\'existe pas  ');
+//    }
+
+// function metoeIfElseIf(saison ,temperature ){
+//     if ( saison == 'printemps') {
+//     var message5 = document.write ('nous sommes au '+saison);
+//    }else if ( saison == 'été'||saison=='automne'||saison=='hiver') {
+//     var message5 = document.write ('nous sommes au' +'  '+saison);
+ 
+//    } else {
+//     var message5 = document.write('cette saison'+ '   '+ +saison+  ' n\'existe pas  ');
+//    }
+//    return message5;
+// }
+// metoeIfElseIf(saison,temperature);
+
+// function metoefin(saison ,temperature ) { 
+//     var article2; 
+// if ( saison == 'printemps') {
+//     article2 = 'au';
+//    }else if ( saison == 'été'||saison=='automne'||saison=='hiver') {
+//     article2 = 'en';
+//    } else {
+//     return  alert('cette saison'+ '   '+ +saison+  ' n\'existe pas  ');
+//    }
+//    return document.write('<p> Nous sommes'+article2+''+saison+' et il fait '+ temperature+'</p>');
+// }
+// metoefin(saison,temperature);
+
+// EXO 
+    // faire une function quelleEcole() 
+    // demandez à votre visiteur "quel âge à votre enfant ?" 
+    // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans our rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
+
+
+    let AgeEnfant = prompt('quel âge à votre enfant ?  ');
+    console.log(AgeEnfant );
+
+    function scolaire(AgeEnfant) {
+        if(AgeEnfant < 6) {
+            var Ecole =  document.write('<p>votre enfant doit avoir plus de 6 ans pour rentrer à l\'école</p>')
+        }else if( AgeEnfant >= 6 && AgeEnfant < 11 ) {
+            document.write('<p>votre enfant va en primaire  car il a '+AgeEnfant+ ' ans</p>');
+        }else if( AgeEnfant >= 11  && AgeEnfant < 15) {
+            var Ecole =  document.write('<p>votre enfant va au collège car il a '+AgeEnfant+ ' ans</p>');
+        }else if( AgeEnfant >= 15||AgeEnfant <= 18 ) {
+            var Ecole =   document.write('<p>votre enfant doit aller au lycée car il a ' +AgeEnfant+ ' ans ' + '</p>');
+        }else {
+            var Ecole =   document.write('<p>votre enfant n\'est pas en âge scolaire car il a '+AgeEnfant+' ans </p>');
+         }
+         return Ecole;
+    }
+    scolaire(AgeEnfant);
 
 
 
@@ -367,4 +530,4 @@ switch (choixCouleur) {
 
 
 
-</html>
+</html> 
