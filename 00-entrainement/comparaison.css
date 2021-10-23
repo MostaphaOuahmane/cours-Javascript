@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(202, 133, 191);
+}
+
+.conteneur {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titre {
+    width: 70%;
+    margin: 0 auto;
+    background-color: powderblue;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.exo {
+    background-color: gold;
+    border-radius: 10px;
+    padding: 5px;
+}
+.p {
+    width: 70;
+    height: 70;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
