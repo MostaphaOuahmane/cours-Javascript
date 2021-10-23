@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecteur-intre</title>
+    <style>
+        .avion {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id ="titre2"> mon titre de niveau 2</h2>
+    <div class="avion">
+        AIR 2
+    </div>
+    <div class="avion">
+       AIR 3
+    </div>
+    <div class="avion">
+        <P class="avion"> AIR 4</P>
+    </div>
+    <div class="avion">
+      AIR 5
+    </div>
+    <p id="para">paragraphe 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+    <p title="InfoBulle">paragraphe 4</p>
+    <p>paragraphe 5</p>
+    <script>
+        // selecteur naturelle
+        var montitre2=titre2;
+        console.log(montitre2);
+            // selecteur par id
+            let montitre = document.getElementById('titre2');
+            console.log(montitre);
+            // selcteur tout élément
+            var Monavion=document.getElementsByClassName('avion');
+            console.log(Monavion);
+            console.log(Monavion[1]);
+            //  remplace la contianner  il est beau mon avion 
+            console.log(Monavion[1].innerHTML);
+            Monavion[1].innerHTML = ' il est beau mon avion !!';
+           montitre2.innerHTML = ' il est beau mon bonnet!!';
+           console.log(montitre2.innerHTML);
+           let lesp =document.getElementsByTagName('p');
+           console.log(lesp);
+           console.log(lesp[1].innerHTML);
+
+
+     
+            for (var i = 0; i < lesp.length; i++) {
+            lesp[i].style.color = "red";
+            lesp[i].style.marginTop = "30px";
+            // +=  ajouter est affects
+            lesp[i].innerHTML+='les lous';
+
+            var lesp2 = document.querySelectorAll('p');
+            console.log(lesp2);
+            let Monavion2=document.querySelectorAll('.avion');
+            console.log(Monavion2);
+            let parP = document.querySelector('#para');
+            console.log(parP);
+
+        }
+    </script>
+</body>
+</html>
